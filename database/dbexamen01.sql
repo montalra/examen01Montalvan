@@ -1,0 +1,10 @@
+CREATE TABLE propiedades(
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nombre varchar(100) NULL,
+    direccion VARCHAR(200) NOT NULL,
+    caracteristicas VARCHAR(200) NULL,
+    estado VARCHAR(20) NULL,
+    precioalquiler DECIMAL(6,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
